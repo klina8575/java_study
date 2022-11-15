@@ -1,20 +1,21 @@
 package test.ch06;
 
 public class Car {
+	//생성자를 명시하지 않으면 컴파일 과정에서 생성자를 생성해준다.
+	
 	//1. 필드: 객체의 데이터를 저장!!!!
-	//주석 추가
 	String company = "현대자동차";
 	String model;
 	String color;
 	int maxSpeed;
 	int speed;
+	static int numbering = 0;
 //	boolean start; //시동여부
-
 	
-	//생성자를 명시하지 않으면 컴파일 과정에서 생성자를 생성해준다.
-	
-	Car() {}
-	
+	Car() {
+		numbering++;
+	}
+//	
 	Car(String model) {
 //		this.model = model;
 		this(model, "은색", 250);
@@ -31,6 +32,8 @@ public class Car {
 		this.color = color;
 		this.maxSpeed = maxSpeed;
 	}
+	
+
 	
 	
 	/*
