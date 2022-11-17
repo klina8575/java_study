@@ -2,7 +2,7 @@ package test.ch06.question;
 
 public class Example1 {
 
-	public static boolean isNumber(String str) {
+	static boolean isNumber(String str) {
 		// 주어진 문자열이 null이거나 빈문자열“”이라면 false를 반환한다.
 		if (str == null || str.equals(""))
 			return false;
@@ -34,6 +34,7 @@ public class Example1 {
 	}
 
 	public static void main(String[] args) {
+		
 		String str = "123";
 		System.out.println(str + "는 숫자입니까? " + isNumber(str));
 		str = "1234o";
