@@ -6,6 +6,16 @@ public class phone {
 	public String model; //모델명
 	public String color; //컬러
 	
+	//생성자
+	
+	public phone() {
+		System.out.println("부모 생성자 실행");
+	}
+	public phone(String model, String color) {
+		this.model = model;
+		this.color = color;
+	}
+	
 	//메소드
 	public void bell() {
 		System.out.println("벨이 울립니다.");
