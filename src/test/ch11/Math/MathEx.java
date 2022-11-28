@@ -4,7 +4,7 @@ public class MathEx {
 
 	public static void main(String[] args) {
 		double v1 = Math.ceil(5.3); //올림
-		double v2 = Math.floor(5.3); //버림
+		double v2 = Math.floor(5.3); //반올림
 		System.out.println(v1 + ", " + v2);
 		
 		long v3 = Math.max(3, 7);
