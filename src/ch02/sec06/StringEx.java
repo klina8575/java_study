@@ -15,11 +15,19 @@ public class StringEx {
         System.out.println(text);
 
         //작은따옴표 출력
-        String str = "나는 '자바'를 배웁니다.";
+        String str = "나는 \'자바\'를 배웁니다.";
         System.out.println(str);
 
         //큰따옴표 출력(역슬래시 이용)
         str = "나는 \"자바\"를 배웁니다.";
+        System.out.println(str);
+
+        //tab키 만큼 띄어쓰기
+        str = "번호\t\t이름\t직업";
+        System.out.println(str);
+
+        //줄바꿈
+        str = "나는\n자바를\n배웁니다.";
         System.out.println(str);
 
 
